@@ -10,10 +10,20 @@ COPY requirements.txt .
 # Install required Python packages
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Install build dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    git \
+    gcc \
+    zlib1g-dev \
+    && rm -rf /var/lib/apt/lists/*
+
 # Install seqtk
 RUN git clone https://github.com/lh3/seqtk.git && \
     cd seqtk && \
-    make
+    make && \
+    cp seqtk /usr/local/bin/ && \
+    cd .. && \
+    rm -rf seqtk
 
 # Copy the rest of the application code into the container
 COPY . .
