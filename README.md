@@ -1,11 +1,34 @@
 # subsample_fastq
-Subsample Fastq Files using seqtk(https://github.com/lh3/seqtk)
+Subsample fastq files using [seqtk](https://github.com/lh3/seqtk)
 
-## Usage
-❯ python fastq_subsample.py --help
+## Python Project Requirements
+
+This document lists the required Python packages for the project.
+
+### Requirements
+
+- **Python**
+  - Version = `3.11`
+  
+- **typer**: A library for building command-line interfaces (CLI).
+  - Version: `0.4.0`
+  
+- **rich**: A library for rich text and beautiful formatting in the terminal.
+  - Version: `13.3.1`
+
+### Installation
+
+To install the required packages, run the following command:
 
 ```bash
- Usage: fastq_subsample.py [OPTIONS] R1 R2
+pip install -r requirements.txt
+```
+
+## Usage
+❯ python subsample_fastq.py --help
+
+```bash
+ Usage: subsample_fastq.py [OPTIONS] R1 R2
 
  Main function to process FASTQ files.
 
