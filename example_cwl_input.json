@@ -1,0 +1,17 @@
+{
+    "r1": {
+      "class": "File",
+      "path": "/path/to/your/input/R1.fastq.gz"
+    },
+    "r2": {
+      "class": "File",
+      "path": "/path/to/your/input/R2.fastq.gz"
+    },
+    "threshold": 120000000,
+    "seed": 11,
+    "output-prefix": "subsampled",
+    "output-dir": {
+      "class": "Directory",
+      "path": "/path/to/your/output/directory"
+    }
+  }
