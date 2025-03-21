@@ -49,7 +49,7 @@ requirements:
        ramMin: 48000
        coresMin: 4
   - class: DockerRequirement
-    dockerPull: ghcr.io/msk-access/subsample_fastq:0.0.1
+    dockerPull: ghcr.io/msk-access/subsample_fastq:0.0.2
 'dct:contributor':
   - class: 'foaf:Organization'
     'foaf:member':
@@ -66,5 +66,5 @@ requirements:
     'foaf:name': Memorial Sloan Kettering Cancer Center
 'doap:release':
   - class: 'doap:Version'
-    'doap:name': merge_fastq
-    'doap:revision': 0.1.1
+    'doap:name': subsample_fastq
+    'doap:revision': 0.0.2
